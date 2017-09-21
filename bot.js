@@ -13,7 +13,7 @@ function respond() {
 	  trigger = "Bill";
 
 	var req = request.text.toString();
-  if(req.indexOf(trigger) >= 0 && req.indexOf(trigger) <= 1000 {//request.text && botRegex.test(request.text)) {
+  if((req.indexOf("Bill") >= 0) && (req.indexOf("Bill") <= 1000)) {//request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
     //postMessage();
 	

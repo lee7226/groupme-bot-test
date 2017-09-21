@@ -8,7 +8,8 @@ function respond() {
       botRegex = /^\/Bill$/,
 	  trigger = "Bill";
 
-  if(request.text && botRegex.test(request.text)) {
+	var str = request.text;
+  if(request.text && str.includes("Bill") {//botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -22,7 +23,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "test" + request.text.includes("Bill");//cool();
+  botResponse = "test";//cool();
 
   options = {
     hostname: 'api.groupme.com',

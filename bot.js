@@ -13,13 +13,13 @@ function respond() {
 	  trigger = "Bill";
 
 	var req = request.text.toString();
-  if(req.indexOf("test") == 0) {//request.text && botRegex.test(request.text)) {
+  if(req.indexOf(trigger) >= 0 && req.indexOf(trigger) <= 1000 {//request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
     //postMessage();
 	
 	/////////////////
 	var botResponse, options, body, botReq;
-  var str = "does this work?" + " how about this? " + req + " end";
+  var str = "Mmmhmm.";
 
   botResponse = str;//this.req.toString();//cool();
 

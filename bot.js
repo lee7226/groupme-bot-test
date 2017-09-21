@@ -12,14 +12,14 @@ function respond() {
       botRegex = /^\/Bill$/,
 	  trigger = "Bill";
 
-	var str = request.text.toString();
+	var req = request.text.toString();
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
     //postMessage();
 	
 	/////////////////
 	var botResponse, options, body, botReq;
-  var str = "does this work?" + " how about this? " + request.text.toString() + " end";
+  var str = "does this work?" + " how about this? " + req + " end";
 
   botResponse = str;//this.req.toString();//cool();
 

@@ -8,8 +8,8 @@ function respond() {
       botRegex = /^\/Bill$/,
 	  trigger = "Bill";
 
-	var str = request.text;
-  if(request.text) { //&& str.includes("Bill")) {	//botRegex.test(request.text)) {
+	var str = request.text.toString();
+  if(request.text && str.includes("test")) { //&& str.includes("Bill")) {	//botRegex.test(request.text)) {
     this.res.writeHead(200);	
     postMessage();
     this.res.end();

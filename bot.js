@@ -9,9 +9,9 @@ function respond() {
 	  trigger = "Bill";
 
 	var str = request.text.toString();
-  if(request.text && str.includes("test")) { //&& str.includes("Bill")) {	//botRegex.test(request.text)) {
+  if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
-    postMessage();
+    postMessage(str);
     this.res.end();
   } else {
     console.log("don't care");
@@ -23,7 +23,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "test";//cool();
+  botResponse = str;//cool();
 
   options = {
     hostname: 'api.groupme.com',

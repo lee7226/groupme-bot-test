@@ -22,7 +22,7 @@ function respond() {
 
 function postMessage() {
   var botResponse, options, body, botReq;
-  var str = "does this work?" + " how about this? " + this.req.str + " end";
+  var str = "does this work?" + " how about this? " + JSON.parse(this.req.chunks[0]).toString() + " end";
 
   botResponse = str;//this.req.toString();//cool();
 

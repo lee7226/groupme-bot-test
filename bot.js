@@ -13,9 +13,7 @@ function respond() {
 	  trigger = "Bill";
 
 	var req = request.text.toString();
-	var str = "Hello world, welcome to the universe.";
-    var n = str.includes("world");
-  if(n) {//request.text && botRegex.test(request.text)) {
+  if(req.indexOf("test" >= 0)) {//request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
     //postMessage();
 	

@@ -22,7 +22,7 @@ function respond() {
 
 function postMessage() {
   var botResponse, options, body, botReq;
-  var str = "does this work?";
+  var str = "does this work?" + " how about this?";
 
   botResponse = str;//this.req.toString();//cool();
 

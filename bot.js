@@ -20,7 +20,7 @@ function respond() {
   }
 }
 
-function postMessage() {
+function postMessage(var str) {
   var botResponse, options, body, botReq;
 
   botResponse = str;//cool();

@@ -5,7 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/Bill$/;
+      botRegex = /^\/Bill$/,
+	  trigger = "Bill";
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -21,7 +22,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
+  botResponse = "mmm hmm";//cool();
 
   options = {
     hostname: 'api.groupme.com',
@@ -31,7 +32,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "mmhmm"//botResponse
+    "text" : botResponse
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);

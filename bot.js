@@ -13,7 +13,7 @@ function respond() {
 	  trigger = "Bill";
 
 	var req = request.text.toString();
-  if(request.text && botRegex.test(request.text)) {
+  if(req.includes("test")) {//request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);	
     //postMessage();
 	
